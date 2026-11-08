@@ -6,7 +6,6 @@ import { FutureMessages } from './components/FutureMessages';
 import { LoveLetter } from './components/LoveLetter';
 import { MemoryGallery } from './components/MemoryGallery';
 import { MemoryQuiz } from './components/MemoryQuiz';
-import { MusicPlayer } from './components/MusicPlayer';
 import { Timeline } from './components/Timeline';
 import { WelcomeScreen } from './components/WelcomeScreen';
 import { birthdayData } from './config/birthdayData';
@@ -19,7 +18,7 @@ function App() {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [completedChapters, setCompletedChapters] = useState<Record<number, boolean>>({ 0: false });
   const currentMusic = birthdayData.chapterMusic[chapter];
-  const { isPlaying, isMuted, error, hasTrack, play, toggleMute, togglePlayback } = useBackgroundMusic(currentMusic?.src ?? '');
+  const { isPlaying, play } = useBackgroundMusic(currentMusic?.src ?? '');
 
   const markChapterComplete = (chapterIndex: number) => {
     setCompletedChapters((current) => ({ ...current, [chapterIndex]: true }));
@@ -171,15 +170,6 @@ function App() {
         />
       </div>
 
-      <MusicPlayer
-        isPlaying={isPlaying}
-        isMuted={isMuted}
-        trackTitle={currentMusic?.title ?? 'No music'}
-        error={error}
-        hasTrack={hasTrack}
-        onTogglePlayback={togglePlayback}
-        onToggleMute={toggleMute}
-      />
     </div>
   );
 }
