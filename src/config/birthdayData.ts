@@ -31,38 +31,38 @@ export const birthdayData = {
   // Place one audio file per chapter in public/music and set its path here.
   chapterMusic: [
     { title: 'Birthday Surprise', src: '/music/birthday-song.mp3' },
-    { title: 'Our Memories', src: '/music/memories.wav' },
+    { title: 'Our Memories', src: '/music/memories.mp3' },
     { title: 'Do You Remember?', src: '/music/remember.wav' },
     { title: 'Our Journey', src: '/music/journey.wav' },
     { title: 'Our Future', src: '/music/future.wav' },
     { title: 'Love Letter', src: '/music/love-letter.wav' },
   ],
   // Replace this sample with a photo in public/images when ready.
-  heroImage: '/images/birthday-portrait.svg',
+  heroImage: '/images/birthday-portrait.jpeg',
   heroImageAlt: 'Illustrated sample portrait placeholder; replace with her photo',
   theme: 'romantic',
   memories: [
     {
       id: 1,
-      image: '/images/memory-01.svg',
+      image: '/images/1.jpg',
       title: 'Our Beautiful Beginning',
       message: 'Some people enter our lives and make everything more beautiful.',
     },
     {
       id: 2,
-      image: '/images/memory-02.svg',
+      image: '/images/2.jpg',
       title: 'A Moment to Remember',
       message: 'I wish I could pause time whenever I am with you.',
     },
     {
       id: 3,
-      image: '/images/memory-03.svg',
+      image: '/images/3.jpg',
       title: 'My Favourite Person',
       message: 'Among all the beautiful things in this world, you will always be my favourite.',
     },
     {
       id: 4,
-      image: '/images/memory-04.svg',
+      image: '/images/4.jpg',
       title: 'Our Story Continues',
       message: 'Every chapter with you is worth remembering.',
     },
