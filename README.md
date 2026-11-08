@@ -1,6 +1,6 @@
 ﻿# Birthday Surprise
 
-A cinematic romantic birthday website for Aarohi built with React, TypeScript, Vite, and Tailwind CSS.
+A cinematic romantic birthday website built with React, TypeScript, Vite, and Tailwind CSS.
 
 ## Features
 

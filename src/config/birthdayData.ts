@@ -20,9 +20,12 @@ export type TimelineItem = {
   image?: string;
 };
 
+const herName = 'Soma';
+const senderName = 'Aniket';
+
 export const birthdayData = {
-  herName: 'Aarohi',
-  senderName: 'Alex',
+  herName,
+  senderName,
   language: 'en',
   birthdayMessage: 'Happy Birthday, My Love!',
   // Place one audio file per chapter in public/music and set its path here.
@@ -136,7 +139,7 @@ export const birthdayData = {
     'And most importantly, I want to keep choosing you, every single day.',
     'Because my favourite future is the one that has you in it.',
   ],
-  finalLetter: `My Dearest Aarohi,
+  finalLetter: `
 
 Happy Birthday, my love!
 
@@ -155,5 +158,5 @@ I hope your birthday is as beautiful as the happiness you bring into my life.
 Happy Birthday, My Future Wife.
 
 Forever Yours,
-Alex ❤️`,
+${senderName} ❤️`,
 };

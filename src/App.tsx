@@ -71,6 +71,7 @@ function App() {
         return (
           <WelcomeScreen
             herName={birthdayData.herName}
+            senderName={birthdayData.senderName}
             birthdayMessage={birthdayData.birthdayMessage}
             heroImage={birthdayData.heroImage}
             heroImageAlt={birthdayData.heroImageAlt}
@@ -119,6 +120,7 @@ function App() {
         return (
           <WelcomeScreen
             herName={birthdayData.herName}
+            senderName={birthdayData.senderName}
             birthdayMessage={birthdayData.birthdayMessage}
             heroImage={birthdayData.heroImage}
             heroImageAlt={birthdayData.heroImageAlt}

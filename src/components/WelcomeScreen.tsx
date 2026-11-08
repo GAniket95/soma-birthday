@@ -5,6 +5,7 @@ import { ParticleBackground } from './ParticleBackground';
 
 type Props = {
   herName: string;
+  senderName: string;
   birthdayMessage: string;
   heroImage: string;
   heroImageAlt: string;
@@ -12,7 +13,7 @@ type Props = {
   onStart: () => void;
 };
 
-export function WelcomeScreen({ herName, birthdayMessage, heroImage, heroImageAlt, onSurprisePop, onStart }: Props) {
+export function WelcomeScreen({ herName, senderName, birthdayMessage, heroImage, heroImageAlt, onSurprisePop, onStart }: Props) {
   const [surpriseRevealed, setSurpriseRevealed] = useState(false);
   const [imageFailed, setImageFailed] = useState(false);
 
@@ -66,7 +67,7 @@ export function WelcomeScreen({ herName, birthdayMessage, heroImage, heroImageAl
                 <Sparkles className="h-3.5 w-3.5" />
                 A little surprise is floating your way
               </div>
-              <h1 className="font-serif text-4xl leading-tight text-white sm:text-6xl">Someone special has a surprise for you...</h1>
+              <h1 className="font-serif text-4xl leading-tight text-white sm:text-6xl">{senderName} has a little surprise for you...</h1>
               <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-pink-50/75 sm:text-lg">
                 Tap the balloon to pop it and reveal your birthday surprise.
               </p>
