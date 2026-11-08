@@ -24,13 +24,17 @@ function App() {
     setCompletedChapters((current) => ({ ...current, [chapterIndex]: true }));
   };
 
-  const selectChapter = (next: number) => {
+  const selectChapter = (next: number, completeCurrent = false) => {
     if (next < 0 || next >= chapterNames.length || next === chapter || isTransitioning) {
       return;
     }
 
-    if (next > chapter && !completedChapters[chapter]) {
+    if (next > chapter && !completedChapters[chapter] && !completeCurrent) {
       return;
+    }
+
+    if (completeCurrent) {
+      markChapterComplete(chapter);
     }
 
     setIsTransitioning(true);
@@ -78,40 +82,28 @@ function App() {
         return (
           <MemoryGallery
             memories={birthdayData.memories}
-            onContinue={() => {
-              markChapterComplete(1);
-              selectChapter(2);
-            }}
+            onContinue={() => selectChapter(2, true)}
           />
         );
       case 2:
         return (
           <MemoryQuiz
             questions={birthdayData.questions}
-            onContinue={() => {
-              markChapterComplete(2);
-              selectChapter(3);
-            }}
+            onContinue={() => selectChapter(3, true)}
           />
         );
       case 3:
         return (
           <Timeline
             timeline={birthdayData.timeline}
-            onContinue={() => {
-              markChapterComplete(3);
-              selectChapter(4);
-            }}
+            onContinue={() => selectChapter(4, true)}
           />
         );
       case 4:
         return (
           <FutureMessages
             messages={birthdayData.futureMessages}
-            onContinue={() => {
-              markChapterComplete(4);
-              selectChapter(5);
-            }}
+            onContinue={() => selectChapter(5, true)}
           />
         );
       case 5:
