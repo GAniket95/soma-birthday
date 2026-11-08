@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title description">
+  <title id="title">Sample birthday portrait placeholder</title>
+  <desc id="description">A dreamy illustrated portrait placeholder to replace with a personal photo.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#42203e"/>
+      <stop offset=".55" stop-color="#9d4f79"/>
+      <stop offset="1" stop-color="#f0a8bd"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".28" cy=".2" r=".75">
+      <stop offset="0" stop-color="#fff5d8" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#fff5d8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dress" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7d8e5"/>
+      <stop offset="1" stop-color="#c46c94"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="520" rx="36" fill="url(#background)"/>
+  <rect width="720" height="520" rx="36" fill="url(#glow)"/>
+  <circle cx="92" cy="112" r="4" fill="#fff5d8" opacity=".8"/>
+  <circle cx="615" cy="82" r="5" fill="#fff5d8" opacity=".8"/>
+  <circle cx="572" cy="204" r="3" fill="#fff5d8" opacity=".65"/>
+  <path d="M92 402c48-72 118-101 179-87 35-77 115-115 182-93 77 26 121 103 111 180H92Z" fill="#4a2948" opacity=".36"/>
+  <path d="M196 520c17-119 71-184 164-184s147 65 164 184H196Z" fill="url(#dress)"/>
+  <path d="M298 322c8 28 28 43 62 43s54-15 62-43l-8-35h-108l-8 35Z" fill="#e8a7b9"/>
+  <ellipse cx="360" cy="218" rx="92" ry="113" fill="#f3c6b5"/>
+  <path d="M268 217c-18-103 29-165 109-165 73 0 120 47 108 146-24-9-44-31-54-57-43 43-98 59-163 56Z" fill="#42253d"/>
+  <path d="M269 202c-22 60-10 127 17 161l25-42-10-89-32-30Zm184-2c28 57 16 127-11 163l-26-42 10-89 27-32Z" fill="#42253d"/>
+  <path d="M332 224c8 0 14 6 14 13s-6 13-14 13-14-6-14-13 6-13 14-13Zm56 0c8 0 14 6 14 13s-6 13-14 13-14-6-14-13 6-13 14-13Z" fill="#583447"/>
+  <path d="M342 276c12 10 24 10 36 0" fill="none" stroke="#ad6674" stroke-linecap="round" stroke-width="5"/>
+  <path d="M250 145c-28-30-13-65 19-60 12-36 59-28 62 9 2 32-35 60-81 82Z" fill="#e8a6bf"/>
+  <path d="M470 121c16-25 46-19 45 4 28 1 32 35 8 47-21 11-50-8-67-35Z" fill="#f3d488"/>
+  <text x="360" y="488" fill="#fff7fa" font-family="Georgia,serif" font-size="18" letter-spacing="3" text-anchor="middle" opacity=".9">REPLACE WITH YOUR PHOTO</text>
+</svg>

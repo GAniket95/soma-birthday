@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+  background: #120912;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(255, 216, 234, 0.16), transparent 20%),
+    linear-gradient(135deg, #120912 0%, #1d0d19 30%, #170d18 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@layer components {
+  .chapter-shell {
+    @apply relative min-h-[calc(100vh-130px)] overflow-hidden px-4 py-8 sm:px-6 lg:px-12;
+  }
+
+  .glass-panel {
+    @apply rounded-[32px] border border-white/10 bg-white/5 shadow-[0_30px_80px_rgba(0,0,0,0.28)] backdrop-blur-md;
+  }
+
+  .primary-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-pink-200/30 bg-[linear-gradient(135deg,#f3cbd6,#d97ea8)] px-6 py-3 text-sm font-medium text-[#2b1120] shadow-[0_10px_30px_rgba(213,120,164,0.35)] transition hover:scale-[1.02] hover:shadow-[0_14px_34px_rgba(213,120,164,0.45)] active:scale-[0.98];
+  }
+
+  .nav-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-pink-50/80 transition hover:border-pink-200/30 hover:bg-white/10;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
