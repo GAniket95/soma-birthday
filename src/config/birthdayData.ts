@@ -32,7 +32,7 @@ export const birthdayData = {
   chapterMusic: [
     { title: 'Birthday Surprise', src: '/music/birthday-song.mp3' },
     { title: 'Our Memories', src: '/music/memories.mp3' },
-    { title: 'Do You Remember?', src: '/music/remember.wav' },
+    { title: 'Do You Remember?', src: '/music/remember.mp3' },
     { title: 'Our Journey', src: '/music/journey.wav' },
     { title: 'Our Future', src: '/music/future.wav' },
     { title: 'Love Letter', src: '/music/love-letter.wav' },
@@ -72,25 +72,25 @@ export const birthdayData = {
       id: 1,
       question: 'Do you remember our first conversation?',
       answer: 'It felt like the beginning of a love story I never wanted to end.',
-      image: '/images/memory-01.svg',
+      image: '/images/03_1.jpg',
     },
     {
       id: 2,
       question: 'Remember that day when we could not stop laughing?',
       answer: 'Even the smallest moments with you turned into memories I treasure more than gold.',
-      image: '/images/memory-02.svg',
+      image: '/images/03_2.jpg',
     },
     {
       id: 3,
       question: 'Do you remember our favourite little moment?',
       answer: 'That quiet, beautiful moment felt like the whole world had paused just for us.',
-      image: '/images/memory-03.svg',
+      image: '/images/03_3.jpg',
     },
     {
       id: 4,
       question: 'Remember the moment when everything felt special?',
       answer: 'That was the moment I realized how deeply you had become a part of my heart.',
-      image: '/images/memory-04.svg',
+      image: '/images/03_4.jpg',
     },
   ],
   timeline: [
