@@ -99,7 +99,7 @@ export const birthdayData = {
       date: 'The Day We Met',
       title: 'Our First Hello',
       description: 'The moment our story began, and the first spark of something unforgettable.',
-      image: '/images/memory-01.svg',
+      image: '/images/03_4.jpg',
     },
     {
       id: 2,
