@@ -33,8 +33,8 @@ export const birthdayData = {
     { title: 'Birthday Surprise', src: '/music/birthday-song.mp3' },
     { title: 'Our Memories', src: '/music/memories.mp3' },
     { title: 'Do You Remember?', src: '/music/remember.mp3' },
-    { title: 'Our Journey', src: '/music/journey.wav' },
-    { title: 'Our Future', src: '/music/future.wav' },
+    { title: 'Our Journey', src: '/music/journey.mp3' },
+    { title: 'Our Future', src: '/music/future.mp3' },
     { title: 'Love Letter', src: '/music/love-letter.wav' },
   ],
   // Replace this sample with a photo in public/images when ready.
