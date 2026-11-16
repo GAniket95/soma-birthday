@@ -35,7 +35,6 @@ export const birthdayData = {
     { title: 'Do You Remember?', src: '/music/remember.mp3' },
     { title: 'Our Journey', src: '/music/journey.mp3' },
     { title: 'Our Future', src: '/music/future.mp3' },
-    { title: 'Love Letter', src: '/music/love-letter.wav' },
   ],
   // Replace this sample with a photo in public/images when ready.
   heroImage: '/images/birthday-portrait.jpeg',

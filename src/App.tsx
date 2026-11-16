@@ -11,10 +11,11 @@ import { WelcomeScreen } from './components/WelcomeScreen';
 import { birthdayData } from './config/birthdayData';
 import { useBackgroundMusic } from './hooks/useBackgroundMusic';
 
-const chapterNames = ['Welcome', 'Memories', 'Remember', 'Journey', 'Future', 'Letter'];
+const chapterNames = ['Welcome', 'Memories', 'Remember', 'Journey', 'Future & Letter'];
 
 function App() {
   const [chapter, setChapter] = useState(0);
+  const [showFinalLetter, setShowFinalLetter] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [completedChapters, setCompletedChapters] = useState<Record<number, boolean>>({ 0: false });
   const currentMusic = birthdayData.chapterMusic[chapter];
@@ -39,6 +40,9 @@ function App() {
 
     setIsTransitioning(true);
     window.setTimeout(() => {
+      if (next === 4) {
+        setShowFinalLetter(false);
+      }
       setChapter(next);
       setIsTransitioning(false);
     }, 220);
@@ -59,6 +63,7 @@ function App() {
 
   const replayStory = async () => {
     setChapter(0);
+    setShowFinalLetter(false);
     setCompletedChapters({ 0: false });
     if (!isPlaying) {
       await play();
@@ -101,19 +106,20 @@ function App() {
           />
         );
       case 4:
-        return (
-          <FutureMessages
-            messages={birthdayData.futureMessages}
-            onContinue={() => selectChapter(5, true)}
-          />
-        );
-      case 5:
-        return (
+        return showFinalLetter ? (
           <LoveLetter
             finalLetter={birthdayData.finalLetter}
             herName={birthdayData.herName}
             senderName={birthdayData.senderName}
             onReplay={replayStory}
+          />
+        ) : (
+          <FutureMessages
+            messages={birthdayData.futureMessages}
+            onContinue={() => {
+              markChapterComplete(4);
+              setShowFinalLetter(true);
+            }}
           />
         );
       default:

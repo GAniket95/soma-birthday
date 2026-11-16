@@ -22,7 +22,7 @@ export function LoveLetter({ finalLetter, herName, senderName, onReplay }: Props
     <section className="chapter-shell">
       <div className="relative mx-auto max-w-5xl">
         <div className="mb-6 flex items-center justify-between text-sm uppercase tracking-[0.3em] text-pink-100/80">
-          <span>Chapter 06</span>
+          <span>Chapter 05</span>
           <span>The Final Love Letter</span>
         </div>
 
