@@ -37,7 +37,7 @@ export function FutureMessages({ messages, onContinue }: Props) {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -16 }}
               transition={{ duration: 0.5 }}
-              className="min-h-[240px] font-serif text-3xl leading-[1.5] text-white sm:text-5xl"
+              className="flex min-h-[240px] items-center justify-center text-center font-serif text-3xl leading-[1.5] text-white sm:text-5xl"
             >
               {messages[index]}
             </motion.p>
