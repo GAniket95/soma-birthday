@@ -98,35 +98,35 @@ export const birthdayData = {
       date: 'The Day We Met',
       title: 'Our First Hello',
       description: 'The moment our story began, and the first spark of something unforgettable.',
-      image: '/images/03_4.jpg',
+      image: '/images/04_01.jpg',
     },
     {
       id: 2,
       date: 'Our First Conversation',
       title: 'A Beautiful Beginning',
       description: 'Hours vanished and every word felt like a soft promise of something deeper.',
-      image: '/images/memory-02.svg',
+      image: '/images/04_02.jpg',
     },
     {
       id: 3,
       date: 'Our First Special Outing',
       title: 'A Memory to Keep',
       description: 'The kind of day that makes your heart feel full without even trying.',
-      image: '/images/memory-03.svg',
+      image: '/images/04_03.jpg',
     },
     {
       id: 4,
       date: 'Our Favourite Memory',
       title: 'The One I Cherish Most',
       description: 'A beautiful chapter in our story that still makes me smile when I think of it.',
-      image: '/images/memory-04.svg',
+      image: '/images/04_04.jpg',
     },
     {
       id: 5,
       date: 'The Future We Dream Of',
       title: 'A Life Together',
       description: 'The moment we chose to build a future with love, trust, laughter, and tenderness.',
-      image: '/images/memory-01.svg',
+      image: '/images/04_05.jpg',
     },
   ],
   futureMessages: [
@@ -142,17 +142,23 @@ export const birthdayData = {
 
 Happy Birthday, my love!
 
-I do not know if words will ever be enough to express how much you mean to me.
+I don't really know where to start, or how to put everything I feel for you into words. Sometimes I have so much to say, but when it comes to expressing it, I just don't know how.
 
-Today, I just want to remind you how special you are and how grateful I am to have you in my life.
+But today is your day, and I don't want it to pass without telling you how much you mean to me.
 
-As we move towards a new chapter together, I do not promise a perfect life, but I promise that I will always try to make our journey beautiful.
+I'm genuinely happy that you're a part of my life. And honestly, when I think about our future, I get excited about the smallest things. The little moments, the silly arguments, laughing together over nothing, making plans, changing those plans, and just having each other around.
 
-I want to celebrate your dreams, support your ambitions, share your happiness, and stand beside you through every challenge.
+I know life won't always be easy. We might have difficult days, disagreements, and moments when things don't go as planned. But one thing I want you to know is that I want to face all of it with you. I don't promise to be perfect, but I'll always try to be someone you can count on.
 
-I look forward to all the little things we have not experienced yet, all the memories we have not created, and all the beautiful chapters waiting for us.
+I want to see you achieve everything you've ever dreamed of. I want to be there when you're happy, when you're worried, when you succeed, and even when things don't work out. I want us to grow together, learn from each other, and make a life that feels like ours.
 
-I hope your birthday is as beautiful as the happiness you bring into my life.
+There's still so much waiting for us. So many places to visit, things to try, memories to make, and little moments that we haven't even imagined yet. And I honestly can't wait to experience all of that with you.
+
+I don't know exactly what the future has planned for us, but I know one thing — I'm looking forward to it, because I get to share it with you.
+
+I hope this birthday brings you lots of happiness, smiles, and everything your heart wishes for. You deserve all the good things in life.
+
+And one last thing... I'm really looking forward to the day when I won't have to call you my future wife anymore.
 
 Happy Birthday, My Future Wife.
 
